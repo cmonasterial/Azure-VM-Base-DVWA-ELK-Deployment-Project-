@@ -57,18 +57,20 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
+| Name     | Function | Private IP/Public IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 13.93.7.84/10.1.0.4   | Linux           |
+| Web-1    | Web Server| 10.1.0.5           | Linux                  |
+| Web-2    |Web Server | 10.1.0.6  | Linux                 |
+| Web-3    |Backup Web server      | 10.1.0.7            |Linux                  |
+| ELK Server |Monitoring server      | 40.118.229.124/10.2.0.4            |Linux                  |
+| Load Balancer |Load Balancer      | 104.211.61.233          |                  |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the ELK virtual machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
 Machines within the network can only be accessed by _____.
