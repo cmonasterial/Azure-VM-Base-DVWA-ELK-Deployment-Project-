@@ -78,13 +78,13 @@ Machines within the network can only be accessed internally via by Ansible conta
 
 A summary of the access policies in place can be found in the table below. All VM access are internal network via SSH port 22.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |  Authentication Method |
-|----------|---------------------|----------------------|
-| Jump Box | Yes              | 13.92.7.84    | Public Key
-| ELK Server | No             | 10.2.0.4 | Public Key                    |
-| Web-2 | No                  | 10.2.0.5 | Public Key                    |
-| Web-3 | No                  | 10.2.0.6 | Public Key                    |
-| Web-4 | No                  | 10.2.0.7 | Public Key                    |
+| Name           | Publicly Accessible | Allowed IP Addresses |  Authentication Method        |
+|----------------|---------------------|----------------------|-------------------------------|
+| Jump Box       | Yes                 | 13.92.7.84           | Public Key                    |
+| ELK Server     | No                  | 10.2.0.4             | Public Key                    |
+| Web-2          | No                  | 10.2.0.5             | Public Key                    |
+| Web-3          | No                  | 10.2.0.6             | Public Key                    |
+| Web-4          | No                  | 10.2.0.7             | Public Key                    |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
