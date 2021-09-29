@@ -12,7 +12,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 List of playbook files and configuration files needed to make it work:
 
-https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/ansible.cfg
+[Ansible Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/ansible.cfg)
 
 This document contains the following details:
 - Description of the Topologu
