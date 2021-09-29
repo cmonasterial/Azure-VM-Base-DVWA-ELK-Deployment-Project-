@@ -59,7 +59,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | Private IP/Public IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 13.93.7.84/10.1.0.4   | Linux           |
+| Jump Box | Gateway  | 13.92.7.84/10.1.0.4   | Linux           |
 | Web-1    | Web Server| 10.1.0.5           | Linux                  |
 | Web-2    |Web Server | 10.1.0.6  | Linux                 |
 | Web-3    |Backup Web server      | 10.1.0.7            |Linux                  |
@@ -71,23 +71,26 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the ELK virtual machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+- 40.118.229.124 using port 5601 via a browser
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed internally via by Ansible container through SSH port 22 hosted by the Jump Host Server.
+- The ELK server can be access via the Ansible container hosted by the Jump Host server using IP address of 10.2.0.4 via SSH port 22.
 
-A summary of the access policies in place can be found in the table below.
+A summary of the access policies in place can be found in the table below. All VM access are internal network via SSH port 22.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
+| Name     | Publicly Accessible | Allowed IP Addresses |  Authentication Method |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-
+| Jump Box | Yes              | 13.92.7.84    | Public Key
+| ELK Server | No             | 10.2.0.4 | Public Key                    |
+| Web-2 | No                  | 10.2.0.5 | Public Key                    |
+| Web-3 | No                  | 10.2.0.6 | Public Key                    |
+| Web-4 | No                  | 10.2.0.7 | Public Key                    |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- Ansible Automation users report increased IT and DevOps agility
+- Improved standardization and compliance
+- Better control over cost of infrastructure and cloud resources.
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
@@ -100,10 +103,12 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web 1 - 10.1.0.5
+- Web 2 - 10.1.0.6
+- Web 3 - 10.1.0.7
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeats and Metricbeats are installed to all web servers
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
