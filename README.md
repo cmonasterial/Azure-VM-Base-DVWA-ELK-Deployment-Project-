@@ -82,13 +82,13 @@ A summary of the access policies in place can be found in the table below. All V
 |----------------|---------------------|----------------------|-------------------------------|
 | Jump Box       | Yes                 | 13.92.7.84           | Public Key                    |
 | ELK Server     | No                  | 10.2.0.4             | Public Key                    |
-| Web-2          | No                  | 10.2.0.5             | Public Key                    |
-| Web-3          | No                  | 10.2.0.6             | Public Key                    |
-| Web-4          | No                  | 10.2.0.7             | Public Key                    |
+| Web-2          | No                  | 10.1.0.5             | Public Key                    |
+| Web-3          | No                  | 10.1.0.6             | Public Key                    |
+| Web-4          | No                  | 10.1.0.7             | Public Key                    |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- Ansible Automation users report increased IT and DevOps agility
+- Ansible Automation increased IT and DevOps agility
 - Improved standardization and compliance
 - Better control over cost of infrastructure and cloud resources.
 
