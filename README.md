@@ -42,16 +42,17 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
+Load balancing ensures that the application will be highly *available*, in addition to restricting *traffic* to the network.
 
-- A load balancer is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. Load balancers are used to increase capacity (concurrent users) and reliability of applications.
+- Advantage of a load balancer is that it acts as a reverse proxy and distributes network or application traffic across a number of servers. Load balancers are used to increase capacity (concurrent users) and reliability of applications.
 - The purpose of an SSH jump host server is to be the only gateway for access to your infrastructure reducing the size of any potential attack surface. Having a dedicated SSH access point also makes it easier to have an aggregated audit log of all SSH connections.
 
-![Screenshots]
+![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Diagrams/Jump%20Host.png)
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the *data* and system *logs*.
+
+- Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
+- Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server, such as: Apache.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
