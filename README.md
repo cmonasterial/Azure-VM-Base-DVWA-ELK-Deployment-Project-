@@ -13,13 +13,20 @@ These files have been tested and used to generate a live ELK deployment on Azure
 List of playbook files and configuration files needed to make it work:
 
 :triangular_flag_on_post:[Ansible Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/ansible.cfg)
-triangular_flag_on_post:[Ansible Hosts](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/hosts)
-triangular_flag_on_post:[DVWA Install  Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/pentest.yml)
-triangular_flag_on_post:[ELK Install Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/install-elk.yml)
-triangular_flag_on_post:[Filebeat Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/files/filebeat-config.yml)
-triangular_flag_on_post:[Metricbeat Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/files/metricbeat-config.yml)
-triangular_flag_on_post:[Filebeat Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/roles/filebeat-playbook.yml)
-triangular_flag_on_post:[Metricbeat Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/roles/metricbeat-playbook.yml)
+
+:triangular_flag_on_post:[Ansible Hosts](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/hosts)
+
+:triangular_flag_on_post:[DVWA Install  Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/pentest.yml)
+
+:triangular_flag_on_post:[ELK Install Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/install-elk.yml)
+
+:triangular_flag_on_post:[Filebeat Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/files/filebeat-config.yml)
+
+:triangular_flag_on_post:[Metricbeat Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/files/metricbeat-config.yml)
+
+:triangular_flag_on_post:[Filebeat Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/roles/filebeat-playbook.yml)
+
+:triangular_flag_on_post:[Metricbeat Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/roles/metricbeat-playbook.yml)
 
 
 This document contains the following details:
@@ -35,8 +42,12 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
+
+- A load balancer is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. Load balancers are used to increase capacity (concurrent users) and reliability of applications.
+- The purpose of an SSH jump host server is to be the only gateway for access to your infrastructure reducing the size of any potential attack surface. Having a dedicated SSH access point also makes it easier to have an aggregated audit log of all SSH connections.
+
+![Screenshots]
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
