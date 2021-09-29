@@ -5,7 +5,7 @@ This particular repository will show you how to create a secure and easy deploym
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Diagrams/Cloud%20Security%20and%20Virtualization%20Homework%20with%20Elk%20VM.png
+![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Diagrams/Cloud%20Security%20and%20Virtualization%20Homework%20with%20Elk%20VM.png)
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
