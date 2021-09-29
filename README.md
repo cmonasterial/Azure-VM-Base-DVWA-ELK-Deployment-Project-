@@ -1,4 +1,4 @@
-# Azure VM Base DVWA & ELK Deployment Project
+# Azure VM Base DVWA & ELK Deployment Project \tectcolor{blue} {blue}
 This particular repository will show you how to create a secure and easy deployment of DVWA and ELK that can be use for Cybersecurity students and professionals.
 
 ## Automated DVWA & ELK Stack Deployment
