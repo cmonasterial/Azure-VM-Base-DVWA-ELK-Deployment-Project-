@@ -12,10 +12,18 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 List of playbook files and configuration files needed to make it work:
 
-[Ansible Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/ansible.cfg)
+:triangular_flag_on_post:[Ansible Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/ansible.cfg)
+triangular_flag_on_post:[Ansible Hosts](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/hosts)
+triangular_flag_on_post:[DVWA Install  Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/pentest.yml)
+triangular_flag_on_post:[ELK Install Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/install-elk.yml)
+triangular_flag_on_post:[Filebeat Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/files/filebeat-config.yml)
+triangular_flag_on_post:[Metricbeat Configuration](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/files/metricbeat-config.yml)
+triangular_flag_on_post:[Filebeat Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/roles/filebeat-playbook.yml)
+triangular_flag_on_post:[Metricbeat Playbook](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Ansible/roles/metricbeat-playbook.yml)
+
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
