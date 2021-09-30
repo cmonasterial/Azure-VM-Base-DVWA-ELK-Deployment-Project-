@@ -127,11 +127,15 @@ This ELK server is configured to monitor the following machines:
 - Web 2 - 10.1.0.6
 - Web 3 - 10.1.0.7
 
-We have installed the following Beats on these machines:
-- Filebeats and Metricbeats are installed to all web servers
+After successfully running this playbook you now have installed the Filebeats and Metricbeats on your machines.
 
-These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeats and Metricbeats are now installed to all web servers using the ELK Install playbook.
+
+What are these Beats for? This will allow us to collect information from each machine that we want to try to monitor and record logs. Below are the screenshot and explain what are the main usage and what is use for: 
+
+- Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.  Below is a sample screen shot.
+
+![Screenshot]()
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
