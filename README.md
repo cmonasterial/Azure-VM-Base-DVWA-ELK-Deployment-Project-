@@ -141,7 +141,7 @@ What are these Beats for? This will allow us to collect information from each ma
 
 ### Filebeat and Metricbeat Diagram
 
-![Screenshot]()
+![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Diagrams/ELK%20Diagram.PNG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
