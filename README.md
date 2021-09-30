@@ -125,11 +125,15 @@ docker container.
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/DVWA%20Install%20Part%205.PNG)
 
+- Below screenshot is the command to use to run the DVWA playbook and what it looks like when executed. If you see red notes it means something is not right and need to correct it.  "Ok" message is a good indicator that it is successful.
+
+![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/pentest%20yml.PNG)
+
 ### ELK Configuration
 
 The ELK installation playbook implements the following tasks:
 
-- As you can see in the below screenshot, it has the same format of commands in the DVWA playbook. Same thing Ansible need to know where and what group of servers you want to install and execute the commands for this playbook.  As depicted below the first thing that needs to be installed is the docker.io to the ELK VM.
+- As you can see in the below screenshot, it has the same format of commands in the DVWA playbook. You need the difference in the hosts name. Same thing Ansible need to know where and what group of servers you want to install and execute the commands for this playbook.  As depicted below the first thing that needs to be installed is the docker.io to the ELK VM.
 
 ![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%201.PNG)
 
@@ -155,7 +159,7 @@ The ELK installation playbook implements the following tasks:
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%206.PNG)
 
   
-- Below screenshot is the command to use to run the playbook and what it looks like when executed. If you see red notes it means something is not right and need to correct it.  "Ok" message is a good indicator that it is successful.
+- Below screenshot is the command to use to run the ELK playbook and what it looks like when executed. Same thing as DVWA, if you see red notes it means something is not right and need to correct it.  "Ok" message is a good indicator that it is successful.
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Install-Elk%20Yml.PNG)
 
