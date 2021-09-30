@@ -133,11 +133,13 @@ After successfully running this playbook you now have installed the Filebeats an
 
 What are these Beats for? This will allow us to collect information from each machine that we want to try to monitor and record logs. Below are the screenshot and explain what are the main usage and what is use for.
 
-- Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events such as apache logs, website logs, system logs etc. This forwards them either to Elasticsearch or Logstash for indexing.  Below is a sample screen shot of filebeat.
+- Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events such as apache logs, website logs, system logs etc. This forwards them either to Elasticsearch or Logstash for indexing.  Below is a sample screen shot of Filebeat.
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Kibana%20Filebeat%20Screenshot.PNG)
 
-- Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. It periodically collect metric data from your target servers, this could be operating system metrics such as CPU or memory or data related to services running on the server. It can also be used to monitor other beats and ELK stack itself.
+- Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. It periodically collect metric data from your target servers, this could be operating system metrics such as CPU or memory or data related to services running on the server. It can also be used to monitor other beats and ELK stack itself. Below is a sample screen shot of Metricbeat.
+
+![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/d0aa95a1cf5ba520700f205239db6eafc85a59dc/Screenshots/Kibana%20Metricbeat%20Screenshot.PNG)
 
 ### Filebeat and Metricbeat Diagram
 
