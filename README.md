@@ -70,7 +70,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the ELK virtual machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the ELK virtual machine can accept connections from the Internet just to use it as an application server via this IP addresses:
+
 - 40.118.229.124 using port 5601 via a browser
 
 Machines within the network can only be accessed internally via by Ansible container through SSH port 22 hosted by the Jump Host Server.
@@ -152,7 +153,7 @@ What are these Beats for? This will allow us to collect information from each ma
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Diagrams/ELK%20Diagram.PNG)
 (source: https://slidetodoc.com/extending-open-stackansible-with-automated-operational-management-william/)
 
-### See it live by clicking below DVWA or ELK Logo 
+### See it in action and live by clicking below DVWA or ELK Logo 
 
    [![](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Logos/DVWA-Small.png)](http://104.211.61.233/) [![](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Logos/ELK-Small.png)](http://40.118.229.124:5601/app/kibana#/home)
 
@@ -160,8 +161,12 @@ What are these Beats for? This will allow us to collect information from each ma
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+
+- Copy the Filebeat (Filebeat-Playbook.yml) and Metricbeat (Metricbeat-Playbook.yml) playbook files to your /etc/ansible directory. To make it manageable I created a subdirectory "roles" and made it a repository of playbooks.
+- Make sure to update the Filebeat (filebeat-config.yml and Metricbeat (metricbeat-config.yml) configuration files. You need to edit to indicate what specific machine you want to host the the Filebeat and Metricbeat app. This configuration files will be copied to the proper Filebeat and Metricbeat folders once you execute their respective playbook. In my case I created a subdirectory folder name "files" as repository for my configuration files. Below are the entries that you need to modify on both configuration files before you execute the playbook.
+
+    ![Screenshot]()
+
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_  
