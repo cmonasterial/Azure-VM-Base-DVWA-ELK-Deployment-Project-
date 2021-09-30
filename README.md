@@ -196,6 +196,8 @@ What are these Beats for? This will allow us to collect information from each ma
 ### See it in action and live by clicking below DVWA or ELK Logo 
 
    [![](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Logos/DVWA-Small.png)](http://104.211.61.233/) [![](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Logos/ELK-Small.png)](http://40.118.229.124:5601/app/kibana#/home)
+   
+- Note: In case DVWA ask you for a username and password just type admin as the user and password as the credentials
 
 ### Using the Playbook
 
