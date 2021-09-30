@@ -85,7 +85,8 @@ A summary of the access policies in place can be found in the table below. All V
 | Web-2          | No                  | 10.1.0.5             | Public Key                    |
 | Web-3          | No                  | 10.1.0.6             | Public Key                    |
 | Web-4          | No                  | 10.1.0.7             | Public Key                    |
-### Elk Configuration
+
+### ELK Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - Ansible Automation increased IT and DevOps agility
@@ -117,6 +118,11 @@ The ELK installation playbook implements the following tasks:
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%206.PNG)
 
+  
+- Below screenshot is the command to use to run the playbook and what it looks like when executed. If you see red notes it means something is not right and need to correct it.  "Ok" message is a good indicator that it is successful.
+
+![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Install-Elk%20Yml.PNG)
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Screen%20Shot%20of%20Docker%20PS%20for%20Elk.JPG)
@@ -145,6 +151,10 @@ What are these Beats for? This will allow us to collect information from each ma
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Diagrams/ELK%20Diagram.PNG)
 (source: https://slidetodoc.com/extending-open-stackansible-with-automated-operational-management-william/)
+
+### See it live by clicking the below DVWA or ELK Logo 
+
+                     
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
