@@ -165,7 +165,8 @@ SSH into the control node and follow the steps below:
 - Copy the Filebeat (Filebeat-Playbook.yml) and Metricbeat (Metricbeat-Playbook.yml) playbook files to your /etc/ansible directory. To make it manageable I created a subdirectory "roles" and made it a repository of playbooks.
 - Make sure to update the Filebeat (filebeat-config.yml and Metricbeat (metricbeat-config.yml) configuration files. You need to edit to indicate what specific machine you want to host the the Filebeat and Metricbeat app. This configuration files will be copied to the proper Filebeat and Metricbeat folders once you execute their respective playbook. In my case I created a subdirectory folder name "files" as repository for my configuration files. Below are the entries that you need to modify on both configuration files before you execute the playbook.
 
-    ![Screenshot]()
+    ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Filebeat%20and%20Metricbeat%20Configuration%20Screenshot.PNG)
+    ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Filebeat%20and%20Metricbeat%20Configuration%20Screenshot%202.PNG)
 
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
