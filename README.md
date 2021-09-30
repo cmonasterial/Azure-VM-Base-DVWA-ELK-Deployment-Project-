@@ -32,7 +32,7 @@ List of playbook files and configuration files needed to make it work:
 This document contains the following details:
 - Description of the Topology
 - Access Policies
-- Ansible installation for a Jump Host
+- Ansible installation to a Jump Host
 - DVWA Configuration 
 - ELK Configuration
   - Beats in Use
@@ -96,9 +96,10 @@ Ansible was used to automate configuration of the DVWA web servers and ELK machi
 - Improved standardization and compliance
 - Better control over cost of infrastructure and cloud resources.
 
-### Ansible installation to Jump Host
+### Ansible installation to a Jump Host
 
-
+- SSH to your Jump Host VM
+- 
 
 ### DVWA Configuration
 
