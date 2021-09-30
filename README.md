@@ -154,7 +154,7 @@ What are these Beats for? This will allow us to collect information from each ma
 
 ### See it live by clicking below DVWA or ELK Logo 
 
-   [![](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Logos/DVWA-Small.png)](http://104.211.61.233/)
+   [![](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Logos/DVWA-Small.png)](http://104.211.61.233/) | [![](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Logos/ELK-Small.png)](http://40.118.229.124:5601/app/kibana#/home)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
