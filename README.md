@@ -32,6 +32,8 @@ List of playbook files and configuration files needed to make it work:
 This document contains the following details:
 - Description of the Topology
 - Access Policies
+- Ansible installation for a Jump Host
+- DVWA Configuration 
 - ELK Configuration
   - Beats in Use
   - Machines Being Monitored
@@ -87,15 +89,30 @@ A summary of the access policies in place can be found in the table below. All V
 | Web-3          | No                  | 10.1.0.6             | Public Key                    |
 | Web-4          | No                  | 10.1.0.7             | Public Key                    |
 
-### ELK Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the DVWA web servers and ELK machine. No configuration was performed manually, which is advantageous because...
+
 - Ansible Automation increased IT and DevOps agility
 - Improved standardization and compliance
 - Better control over cost of infrastructure and cloud resources.
 
+### Ansible installation to Jump Host
+
+
+
+### DVWA Configuration
+
+The DVWA installation playbook implements the following tasks:
+
+- As you can see in the below screenshot, the first four lines are important. This will make Ansible know where and what group of servers you want to install or execute the commands for this playbook. As depicted below the first thing that needs to be installed is the docker.io to the DVWA web servers VM.
+
+![Screenshot]()
+
+### ELK Configuration
+
 The ELK installation playbook implements the following tasks:
-- As you can see in the below screenshot, the first four lines are important. This will make Ansible know where and what group of servers you want to install or execute the commands for this playbook.  As depicted below the first thing that needs to be installed is the docker.io to the ELK VM.
+
+- As you can see in the below screenshot, it has the same format of commands in the DVWA playbook. Same thing Ansible need to know where and what group of servers you want to install or execute the commands for this playbook.  As depicted below the first thing that needs to be installed is the docker.io to the ELK VM.
 
 ![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%201.PNG)
 
@@ -171,5 +188,14 @@ SSH into the control node and follow the steps below:
 
 - Run the playbook, and navigate to http://40.118.229.124:5601/app/kibana to check that the installation worked as expected.
 
+##### Useful Commands List
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+| Ansible Commands   | Usage |
+|----------------|-----------|
+|                |           |
+|                |           |
+|                |           |
+|                |           |
+|                |           |
+
+#### Visual Guides for proper creation of Azure VMs for DVWA & ELK
