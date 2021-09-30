@@ -92,14 +92,34 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - Improved standardization and compliance
 - Better control over cost of infrastructure and cloud resources.
 
-The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+The ELK installation playbook implements the following tasks:
+- As you can see in the below screenshot, the first four lines are important. This will make Ansible know where and what group of servers you want to install or execute the commands for this playbook.  As depicted below the first thing that needs to be installed is the docker.io to the ELK VM.
+
+![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%201.PNG)
+
+- The 2nd part of the of the installation is to install the phython3-pip. Pip is the standard package manager for Python. It allows you to install and manage additional packages that are not part of the Python standard library.
+
+![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%202.PNG)
+
+- The 3rd part of the installation is to install the docker module
+
+![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%203.PNG)
+
+- The 4th part is also very important.  ELK needs an ample amount of memory.  When you setup your VM it requires minimum of 4GB system memory or else ELK will not run due to lack of system resource. Below screenshot are commands that will assign enough memory for the ELK to function properly.
+
+![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%204.PNG)
+
+- After executing the previous task you can now download and lunch the ELK docker container. You have to specify the ports that ELK use and the port you will be using to access the ELK in the web. In my case here I use the port 5601.
+
+![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%205.PNG)
+
+- This last part of the playbook is optional but nice to have.  This particular task is to automatically start the Ansible docker service if you reboot your VM.
+
+![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%206.PNG)
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Screenshots](Images/docker_ps_output.png)
+![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Screen%20Shot%20of%20Docker%20PS%20for%20Elk.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
