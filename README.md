@@ -63,7 +63,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web-1    | Web Server| 10.1.0.5           | Linux                  |
 | Web-2    |Web Server | 10.1.0.6  | Linux                 |
 | Web-3    |Backup Web server      | 10.1.0.7            |Linux                  |
-| ELK Server |Monitoring server      | 40.118.229.124/10.2.0.4            |Linux                  |
+| ELK Server |Elastic, Logstash and Kibana Server     | 40.118.229.124/10.2.0.4            |Linux                  |
 | Load Balancer |Load Balancer      | 104.211.61.233          |                  |
 
 ### Access Policies
@@ -144,6 +144,7 @@ What are these Beats for? This will allow us to collect information from each ma
 ### Filebeat and Metricbeat Diagram
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Diagrams/ELK%20Diagram.PNG)
+(source: https://slidetodoc.com/extending-open-stackansible-with-automated-operational-management-william/)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
