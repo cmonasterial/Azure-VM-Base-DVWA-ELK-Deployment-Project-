@@ -1,5 +1,5 @@
 # Azure VM Base DVWA & ELK Deployment Project
-This particular repository will show you how to create a secure and easy deployment of DVWA and ELK that can be use for Cybersecurity students and professionals.
+This particular repository will show you how to create a secure and easy deployment of DVWA and ELK that can be used by Cybersecurity students and professionals.
 
 ## Automated DVWA & ELK Stack Deployment
 
@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 ![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Diagrams/Cloud%20Security%20and%20Virtualization%20Homework%20with%20Elk%20VM.png)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat & metricbeat playbook file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live DVWA and ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat & metricbeat playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 List of playbook files and configuration files needed to make it work:
 
