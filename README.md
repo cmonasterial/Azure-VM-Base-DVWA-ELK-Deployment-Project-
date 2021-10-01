@@ -150,16 +150,14 @@ The ELK installation playbook implements the following tasks:
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%204.PNG)
 
-
 - After executing the previous task you can now download and lunch the ELK docker container. You have to specify the ports that ELK use and the port you will be using to access the ELK in the web. In my case here I use the port 5601.
 
 ![Screenshots](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%205.PNG)
 
-- Same thing as the DVWA, last part of the playbook is optional but nice to have.  To automatically start the Ansible docker service if you reboot your VM.
+- Same thing as the DVWA, last part of the playbook is optional but nice to have. This command will automatically start the Ansible docker service if you reboot your VM.
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Elk%20Install%20Part%206.PNG)
 
-  
 - Below screenshot is the command to use to run the ELK playbook and what it looks like when executed. Same thing as DVWA, if you see red notes it means something is not right and need to correct it.  "Ok" message is a good indicator that it is successful.
 
 ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Install-Elk%20Yml.PNG)
