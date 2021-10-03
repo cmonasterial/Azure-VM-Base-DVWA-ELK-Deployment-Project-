@@ -81,13 +81,13 @@ Machines within the network can only be accessed internally via by Ansible conta
 
 A summary of the access policies in place can be found in the table below. All VM access are internal network via SSH port 22.
 
-| Name           | Publicly Accessible | Allowed IP Addresses |  Authentication Method        |
-|----------------|---------------------|----------------------|-------------------------------|
-| Jump Box       | Yes                 | 13.92.7.84           | Public Key                    |
-| ELK Server     | No                  | 10.2.0.4             | Public Key                    |
-| Web-2          | No                  | 10.1.0.5             | Public Key                    |
-| Web-3          | No                  | 10.1.0.6             | Public Key                    |
-| Web-4          | No                  | 10.1.0.7             | Public Key                    |
+| Name           | Publicly Accessible | Allowed IP Addresses |
+|----------------|---------------------|----------------------|
+| Jump Box       | Yes                 | 13.92.7.84           |
+| ELK Server     | No                  | 10.2.0.4             |
+| Web-2          | No                  | 10.1.0.5             |
+| Web-3          | No                  | 10.1.0.6             |
+| Web-4          | No                  | 10.1.0.7             |
 
 
 Ansible was used to automate configuration of the DVWA web servers and ELK machine. No configuration was performed manually, which is advantageous because...
@@ -203,7 +203,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- Copy the Filebeat (Filebeat-Playbook.yml) and Metricbeat (Metricbeat-Playbook.yml) playbook files to your /etc/ansible directory. To make it manageable I created a subdirectory "roles" and made it a repository of playbooks.
+- Copy the Filebeat (Filebeat-Playbook.yml) and Metricbeat (Metricbeat-Playbook.yml) playbook files to your /etc/ansible directory. To make it manageable I created a subdirectory "roles" and made it as my repository of playbooks.
 - Make sure to update the Filebeat (filebeat-config.yml) and Metricbeat (metricbeat-config.yml) configuration files. You need to edit to indicate what specific machine you want to host the Filebeat and Metricbeat app. This configuration files will be copied to the proper Filebeat and Metricbeat folders once you execute their respective playbooks. In my case I created a subdirectory folder named "files" as a repository for my configuration files. Below are the entries that you need to modify on both configuration files before you execute their respective playbook.
 
     ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Filebeat%20and%20Metricbeat%20Configuration%20Screenshot.PNG)
