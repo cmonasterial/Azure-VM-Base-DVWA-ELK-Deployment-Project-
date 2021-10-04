@@ -111,7 +111,7 @@ Ansible was used to automate configuration of the DVWA web servers and ELK machi
   7. Lunch the ansible container and connect it using the appropriate Docker commands: docker run -ti cyberxsecurity/ansible:latest bash 
   8. You can check if the docker is running by this command: sudo docker container ps -a
   9. You can also rename the container by this command: sudo docker rename orig_name new_name
-  10. Then it is done. 
+  10. Then it is done. You can now go to the DVWA & ELK configuration.
 
 ### DVWA Configuration
 
