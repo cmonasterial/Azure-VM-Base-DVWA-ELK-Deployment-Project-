@@ -102,15 +102,15 @@ Ansible was used to automate configuration of the DVWA web servers and ELK machi
 - SSH to your Jump Host VM (SSH username@13.92.7.84)
 - Then you can start installing Ansible. 
 
-  1. Install docker.io to your Jump Box
-  2. Run first this command: **sudo apt update**
-  3. Then **sudo apt install docker.io**
-  4. Verify that the Docker service is running with this command: **sudo systemctl status docker**
-  5. If not running run this command: **sudo systemctl status docker**
-  6. Once the Docker is installed, pull the container cybersecurity/asnible with this command: **sudo     docker pull cybersecurity/ansible**
-  7. Lunch the ansible container and connect it using the appropriate Docker commands: **docker run -ti    cyberxsecurity/ansible:latest bash** 
-  8. You can check if the docker is running by this command: **sudo docker container ps -a**
-  9. You can also rename the container by this command: **sudo docker rename orig_name new_name**
+ 01. Install docker.io to your Jump Box
+ 02. Run first this command: **sudo apt update**
+ 03. Then **sudo apt install docker.io**
+ 04. Verify that the Docker service is running with this command: **sudo systemctl status docker**
+ 05. If not running run this command: **sudo systemctl status docker**
+ 06. Once the Docker is installed, pull the container cybersecurity/asnible with this command: **sudo     docker pull cybersecurity/ansible**
+ 07. Lunch the ansible container and connect it using the appropriate Docker commands: **docker run -ti    cyberxsecurity/ansible:latest bash** 
+ 08. You can check if the docker is running by this command: **sudo docker container ps -a**
+ 09. You can also rename the container by this command: **sudo docker rename orig_name new_name**
  10. You can attach to ansible container via this command: **sudo docker attach container_name**
  11. Once you are in the container you need to run again **SSH-keygen** and this will be the public key     of the internal servers.
  12. Next, it is important to edit the files **host** and **ansible.cfg** in the /etc/ansible
