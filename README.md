@@ -120,7 +120,7 @@ Ansible was used to automate configuration of the DVWA web servers and ELK machi
  
       ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Hosts.PNG) 
       
-      And the second one is the ansible.cfg file. As you can see in here you need to put your username
+      And the second one is the ansible.cfg file. As you can see here you need to put your VM username
  
       ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/ansiblecfg.PNG)
  
