@@ -107,11 +107,24 @@ Ansible was used to automate configuration of the DVWA web servers and ELK machi
   3. Then **sudo apt install docker.io**
   4. Verify that the Docker service is running with this command: **sudo systemctl status docker**
   5. If not running run this command: **sudo systemctl status docker**
-  6. Once the Docker is installed, pull the container cybersecurity/asnible with this command: **sudo docker pull cybersecurity/ansible**
-  7. Lunch the ansible container and connect it using the appropriate Docker commands: **docker run -ti cyberxsecurity/ansible:latest bash** 
+  6. Once the Docker is installed, pull the container cybersecurity/asnible with this command: **sudo     docker pull cybersecurity/ansible**
+  7. Lunch the ansible container and connect it using the appropriate Docker commands: **docker run -ti    cyberxsecurity/ansible:latest bash** 
   8. You can check if the docker is running by this command: **sudo docker container ps -a**
   9. You can also rename the container by this command: **sudo docker rename orig_name new_name**
-  10. Then it is done. You can now go to the DVWA & ELK configuration.
+ 10. You can attach to ansible container via this command: **sudo docker attach container_name**
+ 11. Once you are in the container you need to run again **SSH-keygen** and this will be the public key     of the internal servers.
+ 12. Next, it is important to edit the files **host** and **ansible.cfg** in the /etc/ansible
+     directory. See below screenshot. 
+ 
+      First is the hosts file and as you can see I added my VMs.
+ 
+      ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/Hosts.PNG) 
+      
+      And the second one is the ansible.cfg file. As you can see in here you need to put your username
+ 
+      ![Screenshot]()
+ 
+ 11. Then it is done. You can now go to the DVWA & ELK configuration.
 
 ### DVWA Configuration
 
