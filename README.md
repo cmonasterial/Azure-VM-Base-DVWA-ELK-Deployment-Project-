@@ -85,9 +85,9 @@ A summary of the access policies in place can be found in the table below. All V
 |----------------|---------------------|----------------------|
 | Jump Box       | Yes                 | 13.92.7.84           |
 | ELK Server     | No                  | 10.2.0.4             |
-| Web-2          | No                  | 10.1.0.5             |
-| Web-3          | No                  | 10.1.0.6             |
-| Web-4          | No                  | 10.1.0.7             |
+| Web-1          | No                  | 10.1.0.5             |
+| Web-2          | No                  | 10.1.0.6             |
+| Web-3          | No                  | 10.1.0.7             |
 
 
 Ansible was used to automate configuration of the DVWA web servers and ELK machine. No configuration was performed manually, which is advantageous because...
