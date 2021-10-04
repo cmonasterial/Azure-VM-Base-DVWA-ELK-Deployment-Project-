@@ -124,7 +124,7 @@ Ansible was used to automate configuration of the DVWA web servers and ELK machi
  
       ![Screenshot](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Screenshots/ansiblecfg.PNG)
  
- 11. Then it is done. You can now go to the DVWA & ELK configuration.
+ 11. Then it is done. You can now proceed to the DVWA & ELK configuration.
 
 ### DVWA Configuration
 
