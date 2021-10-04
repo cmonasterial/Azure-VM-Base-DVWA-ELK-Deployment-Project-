@@ -104,7 +104,7 @@ Ansible was used to automate configuration of the DVWA web servers and ELK machi
 
   1. Install docker.io to your Jump Box
   2. Run first this command: **sudo apt update**
-  3. Then sudo apt install docker.io
+  3. Then **sudo apt install docker.io**
   4. Verify that the Docker service is running with this command: **sudo systemctl status docker**
   5. If not running run this command: **sudo systemctl status docker**
   6. Once the Docker is installed, pull the container cybersecurity/asnible with this command: **sudo docker pull cybersecurity/ansible**
