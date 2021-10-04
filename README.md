@@ -98,8 +98,20 @@ Ansible was used to automate configuration of the DVWA web servers and ELK machi
 
 ### Ansible installation to a Jump Host
 
-- SSH to your Jump Host VM
-- 
+- Generate a public key using your Terminal or Gitbash (SSH-keygen)
+- SSH to your Jump Host VM (SSH username@13.92.7.84)
+- Then you can start installing Ansible. 
+
+  1. Install docker.io to your Jump Box
+  2. Run first this command: sudo apt update
+  3. Then sudo apt install docker.io
+  4. Verify that the Docker service is running with this command: sudo systemctl status docker
+  5. If not running run this command: sudo systemctl status docker
+  6. Once the Docker is installed, pull the container cybersecurity/asnible with this command: sudo docker pull cybersecurity/ansible
+  7. Lunch the ansible container and connect it using the appropriate Docker commands: docker run -ti cyberxsecurity/ansible:latest bash 
+  8. You can check if the docker is running by this command: sudo docker container ps -a
+  9. You can also rename the container by this command: sudo docker rename orig_name new_name
+  10. Then it is done. 
 
 ### DVWA Configuration
 
