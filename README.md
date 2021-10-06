@@ -236,7 +236,11 @@ SSH into the control node and follow the steps below:
 
 - Run the playbook, and navigate to http://40.118.229.124:5601/app/kibana to check that the installation worked as expected.
 
-##### Useful Commands List
+##### Useful Links
+
+Docker Cheat Sheet - 
+
+
 
 | Ansible Commands   | Usage |
 |----------------|-----------|
