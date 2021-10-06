@@ -242,7 +242,7 @@ SSH into the control node and follow the steps below:
 
    [Ansible Cheat Sheet](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Cheat%20Sheet/Ansible-cheat-sheet.pdf)
 
-
+   [Linux Cheat Sheet]()
 
 
 | Ansible Commands   | Usage |
