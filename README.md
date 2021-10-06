@@ -238,7 +238,10 @@ SSH into the control node and follow the steps below:
 
 ##### Useful Links
 
-Docker Cheat Sheet - 
+   [Docker Cheat Sheet](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Cheat%20Sheet/docker-cheat-sheet.pdf)
+
+   [Ansible Cheat Sheet](https://github.com/cmonasterial/Azure-VM-Base-DVWA-ELK-Deployment-Project-/blob/main/Cheat%20Sheet/Ansible-cheat-sheet.pdf)
+
 
 
 
